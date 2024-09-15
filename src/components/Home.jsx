@@ -2,7 +2,9 @@ import React from 'react' ;
 import styles from "./home.module.css" ;
 import Navbar from './Navbar';
 import Games from './Games';
-import PressRelease from './PressRelease'
+import PressRelease from './PressRelease' ;
+import Carrers from './Carrers';
+import Footer from './Footer'
 import { useTypewriter , Cursor } from 'react-simple-typewriter' ;
 import { FaBeer } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
@@ -11,7 +13,7 @@ import { IoMdMail } from "react-icons/io";
 function Home() {
 
     const [text] = useTypewriter({
-        words: ['gaming get curious', 'you fell adrenaline', 'you feel awesome', 'you play game like pro '],
+        words: ['gaming get curious', 'you feel adrenaline', 'you feel awesome', 'you play game like a pro '],
         loop: 0,
         onLoopDone: () => console.log(`loop completed after 3 runs.`)
       })
@@ -22,7 +24,7 @@ function Home() {
        <div className={styles.container}>
        <Navbar/>
             <div className= {styles.bgImage}>
-                <img src='../images/bg1.jpeg'></img>
+                <img src='../images/game.jpg'></img>
             </div> 
             <div className={styles.hero}>``
                  <div className={styles.heroText}>
@@ -55,7 +57,11 @@ function Home() {
                                     With a wealth of experience in Product Management, Ram has forged an impressive career within the casual gaming industry.
                                     </div>
                                     <div className={styles.founder1icons}>
-                                       <div className={styles.founderLinkedinbox}><CiLinkedin className={styles.founderLinkedin}  /></div>
+                                    <div className={styles.founderLinkedinbox}>
+                                    <a href="https://www.linkedin.com/in/ramakrishna-reddy-y-l-816aba79/" target="_blank" rel="noopener noreferrer">
+                                        <CiLinkedin className={styles.founderLinkedin} />
+                                    </a>
+                                    </div>
                                        <div className={styles.founderMailinbox}><IoMdMail className={styles.founderMail}  /></div>
 
                                     </div>
@@ -71,7 +77,11 @@ function Home() {
                                     With a strong engineering foundation, Shubham has led and developed high-impact solutions in the casual gaming industry.
                                     </div>
                                     <div className={styles.founder1icons}>
-                                       <div className={styles.founderLinkedinbox}><CiLinkedin className={styles.founderLinkedin} /></div>
+                                    <div className={styles.founderLinkedinbox2}>
+                                        <a href="https://www.linkedin.com/in/shubham-joshi-0aba33116/" target="_blank" rel="noopener noreferrer">
+                                            <CiLinkedin className={styles.founderLinkedin} />
+                                        </a>
+                                    </div>
                                        <div className={styles.founderMailinbox}><IoMdMail className={styles.founderMail} /></div>
 
                                     </div>
@@ -83,10 +93,16 @@ function Home() {
                     <Games />
                     
                    {/* Press Release */}
-                  <PressRelease />           
-        </div>
+                  <PressRelease /> 
 
+                  {/* Carrers */}
+                  <Carrers />
+
+                  <Footer />
+        </div>
+                   
        </div>
+          
    </>
   )
 }

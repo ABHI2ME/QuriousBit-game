@@ -221,6 +221,16 @@
   display: flex;
   justify-content: flex-end;
 }
+.founderLinkedinbox a{
+  width: auto;
+}
+.founderLinkedinbox2{
+  display: flex;
+  justify-content: flex-end;
+}
+.founderLinkedinbox2 a{
+  width: auto;
+}
 .founderMailinbox{
  display: flex;
  justify-content: flex-start;

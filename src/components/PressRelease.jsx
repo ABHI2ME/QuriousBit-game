@@ -5,6 +5,7 @@ const PressRelease = () => {
   return (
      <>
        <div className={styles.press}>
+        
              <div className={styles.heading}>
                   <div className={styles.headingText}>
                       PRESS RELEASE

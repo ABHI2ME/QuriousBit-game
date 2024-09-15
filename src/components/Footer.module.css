@@ -1,0 +1,115 @@
+.footer{
+  margin-top: 8.6rem;
+  width: 100%;
+  z-index: 600;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-top: 1px solid white;
+  /* color: white; */
+  /* background: transparent; */
+  /* background-color: red; */
+}
+.contact{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  color: white;
+  font-family: "DM Sans" , Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  
+}
+.contactText{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.links{
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 0.6rem;
+
+}
+.mail{
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-left: 1rem;
+  margin-top: 2rem;
+  font-family: "DM Sans" , Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.location{
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-left: 1rem;
+  margin-top: 2rem;
+  font-family: "DM Sans" , Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.mailIcon{
+  color: white;
+  height: 1rem;
+  font-size: 1rem;
+  width: auto;
+  margin-right: 0.5rem;
+}
+.locationIcon{
+  height: 1rem;
+  color: white;
+  font-size: 1rem;
+  width: auto;
+  margin-right: 0.5rem;
+}
+.privacy{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "DM Sans" , Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.copyright{
+  font-family: "DM Sans" , Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: white;
+  margin-left: 1rem;
+  margin-top: 2rem;
+
+}
+.policy{
+  margin-right: 0.8rem;
+  display: flex ;
+  flex-direction: row-reverse;
+}
+.policy a{
+  text-decoration: none;
+  color: blue;
+  width: auto;
+}
+.service{
+  display: flex ;
+  flex-direction: row-reverse; 
+}
+.service a{
+  text-decoration: none;
+  color: blue;
+  width: auto;
+}
+.privacyDetails{
+  margin-left: 1rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row-reverse;
+  color: blue;
+}
+
