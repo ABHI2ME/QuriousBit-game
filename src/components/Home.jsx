@@ -81,24 +81,11 @@ function Home() {
 
                    {/* games */}
                     <Games />
-                    {/* Press Release */}
-                    <PressRelease />
-
-
-
-                             
+                    
+                   {/* Press Release */}
+                  <PressRelease />           
         </div>
-        
-   
 
-
-
-
-
-
-
-
-       
        </div>
    </>
   )

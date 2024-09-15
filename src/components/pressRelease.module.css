@@ -1,0 +1,88 @@
+.press{
+    margin-top: 19rem;
+    width: 100%;
+    z-index: 600;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+}
+.heading{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  width: 100%;
+    display: flex;
+    flex-direction: column;
+   margin-top: 2rem;
+   width: 85%;
+   height: auto;
+   align-items: center;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+  
+}
+.headingText{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-size: 1.5rem;
+     font-weight: 500;
+     color: white;
+     display: flex;
+     justify-content: center;
+     height: 3rem;
+     margin-top: 1rem;
+}
+.founders{
+    display: flex;
+    gap: 1rem;
+    padding-top: 1.4rem;
+}
+.foundersImg{
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+}
+.foundersImage{
+    border-radius: 10px;
+   
+
+}
+.foundersNews{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: black;
+
+}
+.founderNews1{
+    /* background-color: red; */
+    color: white;
+    width: 97%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    background-color: aliceblue;
+    padding-top: 1rem;
+    border: none;
+    border-radius: 10px;
+}
+.news1Text{
+
+    color: black ;
+}
+.news1Link{
+   text-decoration: none;
+   color: black;
+}
+.news1Link a{
+    text-decoration: none;
+    color: rgb(35, 35, 225);
+}
