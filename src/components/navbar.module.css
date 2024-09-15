@@ -1,0 +1,146 @@
+/* navbar.module.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  height: 4.6rem;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: rgba(37, 35, 33, 0.8);  */
+  backdrop-filter: blur(10px); /* Apply blur effect to the background */
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+  padding: 0.7rem;
+  color: white;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.559);
+}
+
+.navbarLogoImg {
+  height: 100%;
+  width: auto; /* Maintain aspect ratio */
+}
+
+.NavbarLinks {
+  display: flex;
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  flex: 1;
+  gap: 1rem;  
+  margin-right: 3rem;
+  
+}
+
+.navbarLinksHome{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+
+}
+/* .navbarLinksHome:hover {
+  background-color: white;
+  color: black;
+} */
+
+.navbaLinksHomeBtn:hover {
+  background-color: white;
+  color: black;
+  font-size: 1.2rem;
+}
+
+
+.navbarLinksGames{
+   margin-left: 0.5rem;
+   
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.navbarLinksGamesBtn:hover {
+  background-color: white;
+  color: black;
+  font-size: 1.2rem;
+}
+.NavbarLinksAboutUs{
+  margin-left: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.navbarLinksAboutUsBtn:hover {
+  background-color: white;
+  color: black;
+  font-size: 1.2rem;
+}
+
+.navbaLinksHomeBtn{
+  
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 6rem;
+  background: none;
+  border: none;
+  color: rgb(255, 255, 255);
+
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: 0.45s background-color color font-size;
+  border-radius: 5px;
+}
+
+.navbarLinksGamesBtn {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 6rem;
+  background: none;
+  border: none;
+  color: rgb(255, 255, 255);
+
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: 0.45s background-color color font-size;
+  border-radius: 5px;
+}
+.navbarLinksAboutUsBtn{
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 6rem;
+  background: none;
+  border: none;
+  color: rgb(255, 255, 255);
+
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: 0.45s background-color color  font-size;
+  border-radius: 5px;
+}
+
+
+
