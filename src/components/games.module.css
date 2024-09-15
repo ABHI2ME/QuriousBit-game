@@ -1,0 +1,296 @@
+.games{
+    margin-top: 1.5rem;
+    width: 100%;
+    z-index: 600;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+.gamesHeading{
+    color: white;
+    display: flex;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+
+}
+/* .gamesHeadingText{
+   font-family: "DM Sans" ,  sans-serif;
+   font-weight: 500 ;
+   font-size: 2.1rem;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   color: white;
+
+} */
+.gamesHeadingText {
+    background: transparent;
+    position: relative;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    font-size: 2.1rem;
+    display: inline-block;
+    text-align: center;
+    color: white;
+    padding: 10px 20px;
+    overflow: visible;
+  }
+  
+  .gamesHeadingText::before,
+  .gamesHeadingText::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: transparent;
+    border: 2px solid transparent;
+    border-radius: 4px;
+  }
+  
+  .gamesHeadingText::before {
+    animation: 
+      moveLight 4s linear infinite,
+      borderOpacity 4s linear infinite;
+    filter: blur(2px);
+  }
+  
+  .gamesHeadingText::after {
+    animation: 
+      moveLight 4s linear infinite 0.5s,
+      borderOpacity 4s linear infinite 0.5s;
+    filter: blur(5px);
+  }
+  
+  @keyframes moveLight {
+    0%, 100% {
+      background-position: 0% 0%;
+    }
+    25% {
+      background-position: 100% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    75% {
+      background-position: 0% 100%;
+    }
+  }
+  
+  @keyframes borderOpacity {
+    0%, 100% {
+      border-top-color: #3498db;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+    }
+    25% {
+      border-top-color: transparent;
+      border-right-color: #3498db;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+    }
+    50% {
+      border-top-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: #3498db;
+      border-left-color: transparent;
+    }
+    75% {
+      border-top-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+      border-left-color: #3498db;
+    }
+  }
+  
+.gamesContiner{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    
+
+}
+.gamesMobileBox{
+    /* border: 1px solid white; */
+    margin-top: 6rem;
+
+}
+
+.gamesMobile{
+   width: 18.625rem;
+   /* height: 33.435rem; */
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   /* background-color: red; */
+   margin-left: auto;
+   margin-right: 1px;
+   margin-top: auto;
+   margin-bottom: auto;
+   border: 10px solid white;
+   border-radius: 20px;
+   /* animation: slideShow 10s infinite; */
+   overflow: hidden;
+   position: relative;
+   
+
+}
+.gamesMobileWrapper {
+    /* height: 33.435rem; */
+    display: flex;
+    width: calc(18.625rem * 5); /* Width for 5 images */
+    height: 100%;
+    animation: slide 15s linear infinite; /* 5 seconds per image */
+  }
+  
+  .gamesMobile img {
+    width: 18.625rem;
+    height: 33.435rem;
+    object-fit: cover;
+    flex-shrink: 0; /* Prevent images from shrinking */
+  }
+  
+  @keyframes slide {
+    0%, 20% {
+      transform: translateX(0);
+    }
+    25%, 45% {
+      transform: translateX(-18.625rem);
+    }
+    50%, 70% {
+      transform: translateX(-37.25rem);
+    }
+    75%, 95% {
+      transform: translateX(-55.875rem);
+    }
+    100% {
+      transform: translateX(-74.5rem);
+    }
+  }
+
+  .gamesMobileBottom {
+    height: 4.5rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gamesMobileBottomLine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.gamesDetails{
+    /* border: 1px solid white; */
+    margin-top: 6rem;
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    width: 100%;
+    background-color: black;
+   
+}
+.gamesDetailsDiv{
+    
+    border: none;
+    border-radius: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: red; */
+    background-color: black;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    color: white;   
+    background-color: #1a1a1a;
+  
+
+}
+.gamesDetailsImg{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: auto;
+    padding-right: auto;
+    margin-top: 1rem;
+}
+.gamesDetailsImgage{
+    width: 5.6rem ;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+.gamesDetailsHeading{
+    font-family: "DM Sans" ,  sans-serif;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: 800;
+    color: white;   
+}
+.gamesDetailsDescript{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    font-family: "DM Sans" ,  sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: 500;
+    color: white;   
+}
+.gamesDetailsButton{
+    height: 3.6rem;
+    display:flex ;
+    justify-content: center;
+    background: transparent;
+    color: white;  
+    margin-top: 1.2rem; 
+    margin-bottom: 1.5rem;
+    border: none;
+    text-decoration: none;
+}
+.gamesDetailsBtn{
+    height: 100%;
+    width: 14rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "DM Sans"  , Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    background: transparent;
+    color: white;   
+    border: none;
+    background-color: rgba(240, 248, 255, 0.363); 
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+.gamesDetailsBtn:hover {
+    padding: 0.7rem 1.2rem; /* Increase padding */
+    font-size: 1.2rem; /* Increase font size */
+    transform: scale(1.1); /* Scale the button slightly */
+}
+
+.playstationBtn{
+    margin-right: 0.8rem;
+    width: auto;
+    height: 3rem;
+
+}
+
+
+
+  

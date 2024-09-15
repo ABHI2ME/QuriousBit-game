@@ -20,7 +20,7 @@ const Navbar = () => {
                    
                   </div>
                   <div className={styles.navbarLinksGames}>
-                    <Link to = "/" className={styles.navbarLinksGamesBtn}>Games</Link>   
+                    <Link to = "/Games" className={styles.navbarLinksGamesBtn} >Games</Link>   
                   </div>
                   <div className={styles.navbarLinksAboutUs}>
                     <Link to="/"  className={styles.navbarLinksAboutUsBtn}>About</Link>

@@ -1,6 +1,8 @@
 import React from 'react' ;
 import styles from "./home.module.css" ;
 import Navbar from './Navbar';
+import Games from './Games';
+import PressRelease from './PressRelease'
 import { useTypewriter , Cursor } from 'react-simple-typewriter' ;
 import { FaBeer } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
@@ -53,31 +55,40 @@ function Home() {
                                     With a wealth of experience in Product Management, Ram has forged an impressive career within the casual gaming industry.
                                     </div>
                                     <div className={styles.founder1icons}>
-                                       <div><CiLinkedin className={styles.founderLinkedin}  /></div>
-                                       <div><IoMdMail className={styles.founderMail}  /></div>
+                                       <div className={styles.founderLinkedinbox}><CiLinkedin className={styles.founderLinkedin}  /></div>
+                                       <div className={styles.founderMailinbox}><IoMdMail className={styles.founderMail}  /></div>
 
                                     </div>
                                </div>
                                <div className={styles.foundersInfo2}>
                                <div className={styles.founder1name}>
-                                        Ramakrishna Reddy Y L
+                                           Shubham Joshi
                                     </div>
                                     <div className={styles.founder1position}>
-                                       Founder & CEO
+                                          Founder & CTO
                                     </div>
                                     <div className={styles.founder1descrip}>
-                                    With a wealth of experience in Product Management, Ram has forged an impressive career within the casual gaming industry.
+                                    With a strong engineering foundation, Shubham has led and developed high-impact solutions in the casual gaming industry.
                                     </div>
                                     <div className={styles.founder1icons}>
                                        <div className={styles.founderLinkedinbox}><CiLinkedin className={styles.founderLinkedin} /></div>
-                                       <div className={styles.founderLinkedinbox}><IoMdMail className={styles.founderMail} /></div>
+                                       <div className={styles.founderMailinbox}><IoMdMail className={styles.founderMail} /></div>
 
                                     </div>
                                </div>
                         </div>
                    </div>
+
+                   {/* games */}
+                    <Games />
+                    {/* Press Release */}
+                    <PressRelease />
+
+
+
                              
         </div>
+        
    
 
 
